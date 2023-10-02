@@ -15,7 +15,7 @@ namespace Data_structure
 
             while (true)
             {
-                Console.WriteLine("Please navigate through the menu by inputting the number \n(1, 2, 3 ,4, 0) of your choice"
+                Console.WriteLine("Please navigate through the menu by inputting the number \n(0, 1, 2, 3, 4, 5, 6, 7) of your choice"
                     + "\n1. Find nth Odd number"
                     + "\n2. Find nth Even number"
                     + "\n3. Find nth Fibonacci number"
