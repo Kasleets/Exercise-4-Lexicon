@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Xml.XPath;
 using static Data_structure.Methods;
+using static Data_structure.ExtraExercise;
 
 namespace Data_structure
 {
     class Program
     {
-        //Github test push 
+        //Github test push for submit this version of file. V1.2
         /// <summary>
         /// The main method, vill handle the menues for the program
         /// </summary>
@@ -21,6 +22,7 @@ namespace Data_structure
                     + "\n2. Examine a Queue"
                     + "\n3. Examine a Stack"
                     + "\n4. Check Parenthesis"
+                    + "\n5. Extra Functionality Menu"
                     + "\n0. Exit the application");
                 char input = ' ';                                   //Creates the character input to be used with the switch-case below.
                 try
@@ -46,16 +48,19 @@ namespace Data_structure
                     case '4':
                         CheckParenthesis();
                         break;
-                    /*
-                     * Extend the menu to include the recursive 
-                     * and iterative exercises.
-                     */
+                    case '5':
+                        Menus.ExtraExerciseMenu();
+                        break;
                     case '0':
                         Environment.Exit(0);
                         break;
                     default:
-                        Console.WriteLine("Please enter some valid input (0, 1, 2, 3, 4)");
+                        Console.WriteLine("Please enter some valid input (0, 1, 2, 3, 4, 5) ");
                         break;
+                    /*
+                     * Extend the menu to include the recursive 
+                     * and iterative exercises.
+                     */
                 }
             }
         }
@@ -73,7 +78,7 @@ namespace Data_structure
             while (true)
             {
                 Console.Write("What would you like to do next? ");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine()!;
 
                 if (string.IsNullOrEmpty(input))
                 {
@@ -167,7 +172,7 @@ namespace Data_structure
                 while (true)
                 {
                 Console.Write("What would you like to do next? ");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine()!;
 
                 if (string.IsNullOrEmpty(input))
                 {
@@ -233,7 +238,7 @@ namespace Data_structure
             while (true)
                 {
                 Console.Write("What would you like to do next? ");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine()!;
 
                 if (string.IsNullOrEmpty(input))
                 {
@@ -288,7 +293,7 @@ namespace Data_structure
             */
         }
         #endregion
-        #region Task 4
+#region Task 4
         //Method to check for balanced parentheses
         //The method uses a stack to check for balanced parentheses
         //The method uses a helper method to check for matching pairs of parentheses
@@ -301,7 +306,7 @@ namespace Data_structure
             while (true)
             {
                 Console.Write("What would you like to do next? ");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine()!;
 
                 if (string.IsNullOrEmpty(input))
                 {
