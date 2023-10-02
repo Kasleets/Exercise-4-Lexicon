@@ -1,6 +1,8 @@
 ******************************************************************************************
 1. Hur fungerar stacken och heapen? Förklara gärna med exempel eller skiss på dess
-grundläggande funktionThe Stack and the Heap:
+grundläggande funktion
+
+The Stack and the Heap:
 Definition and differences:
 
 Stack: It's a region of memory where value types are stored. It's managed for you by the CLR (Common Language Runtime) and grows and shrinks automatically.
@@ -29,7 +31,10 @@ Passing to Methods: Value types are passed by value, meaning a copy is passed to
 ******************************************************************************************
 
 3. Följande metoder (se bild nedan) genererar olika svar. Den första returnerar 3, den
-andra returnerar 4, varför?Method: 1public int ReturnValue()
+andra returnerar 4, varför?
+
+Method: 1
+public int ReturnValue()
 {
     int x = new int();
     x = 3;
@@ -58,5 +63,17 @@ Method calls for returning x value which is 3.
 
 In the method 2, x and y are REFERENCE types so they can point to the same object in the memory and changing y does affect the x since they are referencing the same thing.
 That's why it does display new value even on x which is 4.
+
+******************************************************************************************
+
+Task 5 & 6
+
+Iterative functions are more memory-efficient than recursive ones because they don't create new stack frames for each iteration. 
+In contrast, recursive functions, like RecursiveOdd, RecursiveEven, and the Fibonacci function, 
+consume more memory with increasing input values due to the creation of new stack frames for each recursive call. 
+
+Among the functions implemented, the recursive Fibonacci can be particularly memory-intensive for larger inputs.
+
+
 
 ******************************************************************************************

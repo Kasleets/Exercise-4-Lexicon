@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Xml.XPath;
 using static Data_structure.Methods;
+using static Data_structure.ExtraExercise;
 
 namespace Data_structure
 {
@@ -46,6 +47,18 @@ namespace Data_structure
                     case '4':
                         CheckParenthesis();
                         break;
+                    case '5':
+                        HandleRecursiveOdd();
+                        break;
+                    case '6':
+                        HandleRecursiveEven();   
+                        break;
+                    case '7':
+                        HandleFibonacci();
+                        break;
+                    case '8':
+                        Menus.ExtraExerciseMenu();
+                        break;
                     /*
                      * Extend the menu to include the recursive 
                      * and iterative exercises.
@@ -73,7 +86,7 @@ namespace Data_structure
             while (true)
             {
                 Console.Write("What would you like to do next? ");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine()!;
 
                 if (string.IsNullOrEmpty(input))
                 {
@@ -167,7 +180,7 @@ namespace Data_structure
                 while (true)
                 {
                 Console.Write("What would you like to do next? ");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine()!;
 
                 if (string.IsNullOrEmpty(input))
                 {
@@ -233,7 +246,7 @@ namespace Data_structure
             while (true)
                 {
                 Console.Write("What would you like to do next? ");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine()!;
 
                 if (string.IsNullOrEmpty(input))
                 {
@@ -288,7 +301,7 @@ namespace Data_structure
             */
         }
         #endregion
-        #region Task 4
+#region Task 4
         //Method to check for balanced parentheses
         //The method uses a stack to check for balanced parentheses
         //The method uses a helper method to check for matching pairs of parentheses
@@ -301,7 +314,7 @@ namespace Data_structure
             while (true)
             {
                 Console.Write("What would you like to do next? ");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine()!;
 
                 if (string.IsNullOrEmpty(input))
                 {
