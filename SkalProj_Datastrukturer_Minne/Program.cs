@@ -7,7 +7,7 @@ namespace Data_structure
 {
     class Program
     {
-        //Github test push 
+        //Github test push for submit this version of file. V1.2
         /// <summary>
         /// The main method, vill handle the menues for the program
         /// </summary>
@@ -22,6 +22,7 @@ namespace Data_structure
                     + "\n2. Examine a Queue"
                     + "\n3. Examine a Stack"
                     + "\n4. Check Parenthesis"
+                    + "\n5. Extra Functionality Menu"
                     + "\n0. Exit the application");
                 char input = ' ';                                   //Creates the character input to be used with the switch-case below.
                 try
@@ -48,27 +49,18 @@ namespace Data_structure
                         CheckParenthesis();
                         break;
                     case '5':
-                        HandleRecursiveOdd();
-                        break;
-                    case '6':
-                        HandleRecursiveEven();   
-                        break;
-                    case '7':
-                        HandleFibonacci();
-                        break;
-                    case '8':
                         Menus.ExtraExerciseMenu();
                         break;
-                    /*
-                     * Extend the menu to include the recursive 
-                     * and iterative exercises.
-                     */
                     case '0':
                         Environment.Exit(0);
                         break;
                     default:
                         Console.WriteLine("Please enter some valid input (0, 1, 2, 3, 4)");
                         break;
+                    /*
+                     * Extend the menu to include the recursive 
+                     * and iterative exercises.
+                     */
                 }
             }
         }

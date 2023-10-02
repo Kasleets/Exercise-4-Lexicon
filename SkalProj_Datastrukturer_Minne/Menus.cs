@@ -19,7 +19,12 @@ namespace Data_structure
                     + "\n1. Find nth Odd number"
                     + "\n2. Find nth Even number"
                     + "\n3. Find nth Fibonacci number"
-                    + "\n0. Go back to previous menu");
+                    + "\n4. Recursive Odd number"
+                    + "\n5. Recursive Even number"
+                    + "\n6. Recursive Fibonacci number"
+                    + "\n7. Go back to previous menu"
+                    + "\n0. Exit the program");
+
                 char inputExtra = ' ';                                   //Creates the character input to be used with the switch-case below.
                 try
                 {
@@ -35,18 +40,36 @@ namespace Data_structure
                     case '1':
                         ExtraExercise.HandleIterativeOdd();
                         break;
+
                     case '2':
                         ExtraExercise.HandleIterativeEven();
                         break;
+
                     case '3':
                         ExtraExercise.HandleIterativeFibonacci();
                         break;
 
+                    case '4':
+                        ExtraExercise.HandleRecursiveOdd();
+                        break;
+
+                    case '5':
+                        ExtraExercise.HandleRecursiveEven();
+                        break;
+
+                    case '6':
+                        ExtraExercise.HandleFibonacci();
+                        break;
+
+                    case '7':                        
+                        return;
+
                     case '0':
                         Environment.Exit(0);
                         break;
+
                     default:
-                        Console.WriteLine("Please enter some valid input (0, 1, 2, 3)");
+                        Console.WriteLine("Please enter some valid input (0, 1, 2, 3, 4, 5, 6, 7) ");
                         break;
                 }
             }

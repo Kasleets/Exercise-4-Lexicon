@@ -150,10 +150,6 @@ namespace Data_structure
             return fib;
         }
 
-
-
-
-
         #endregion
 
     }
