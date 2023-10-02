@@ -7,7 +7,7 @@ namespace Data_structure
 {
     class Program
     {
-        //Github test push for submit this version of file. V1.2
+        //Github test push for submit this version of file. V2.0
         /// <summary>
         /// The main method, vill handle the menues for the program
         /// </summary>
@@ -17,7 +17,7 @@ namespace Data_structure
 
             while (true)
             {
-                Console.WriteLine("Please navigate through the menu by inputting the number \n(1, 2, 3 ,4, 0) of your choice"
+                Console.WriteLine("Please navigate through the menu by inputting the number \n(0, 1, 2, 3 ,4, 5) of your choice"
                     + "\n1. Examine a List"
                     + "\n2. Examine a Queue"
                     + "\n3. Examine a Stack"
